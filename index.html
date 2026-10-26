@@ -61,6 +61,9 @@
   .btn-primary:hover{background:var(--red2);color:#fff;transform:translateY(-2px)}
   .btn-ghost{border:1px solid var(--line);color:var(--gold)}
   .btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,162,74,.06)}
+  .btn-download{background:#2a7a4f;color:#fff;border:1px solid #3b9a65;
+    box-shadow:0 0 24px rgba(42,122,79,.35)}
+  .btn-download:hover{background:#33915f;color:#fff;transform:translateY(-2px)}
   .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
     color:var(--dim);font-size:12px;letter-spacing:.3em;text-transform:uppercase}
 
@@ -173,6 +176,14 @@
   .rev .stamp{font-size:.72rem;color:#5a5a63;letter-spacing:.06em}
   .rev-empty{color:var(--dim);text-align:center;padding:30px;border:1px dashed var(--line);
     border-radius:3px}
+  /* ---------- блок скачивания ---------- */
+  .dl-box{display:flex;align-items:center;justify-content:space-between;gap:26px;
+    background:linear-gradient(160deg,#101820,#0d1414);border:1px solid #264a37;
+    padding:30px 34px;border-radius:4px;flex-wrap:wrap;
+    box-shadow:0 20px 50px rgba(0,0,0,.4)}
+  .dl-size{color:var(--gold);font-weight:700;letter-spacing:.04em;font-size:1.05rem;margin-bottom:8px}
+  .dl-note{color:var(--dim);font-size:.92rem}
+  .dl-btn{font-size:1.1rem;padding:18px 38px;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -191,6 +202,7 @@
     <div class="cta">
       <a class="btn btn-primary" href="#about">Об игре</a>
       <a class="btn btn-ghost" href="#controls">Как играть</a>
+      <a class="btn btn-download" href="https://github.com/zkweijo229/terrifying-dream-site/releases/download/v1.0/terrifying-dream-game.zip" target="_blank" rel="noopener">⬇ Скачать игру (34 МБ)</a>
     </div>
     <div class="scroll-hint">листай вниз</div>
   </header>
@@ -333,6 +345,21 @@
         <p>Скрипы, шаги, шёпот и голоса формируются кодом — без внешних файлов.</p></div>
       <div class="card"><span class="num">ОПТИМИЗАЦИЯ</span><h3>Низкие требования</h3>
         <p>Настроено под ноутбуки и машины с интегрированной графикой.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= СКАЧАТЬ ================= -->
+  <section id="download">
+    <div class="eyebrow">скачать</div>
+    <h2>Сыграй сам</h2>
+    <p class="lead">Скачай архив, распакуй его и запусти файл <b>game.exe</b>.
+      Рекомендуем играть в наушниках и не выключать свет.</p>
+    <div class="dl-box">
+      <div>
+        <div class="dl-size">ZIP · 34 МБ · Windows 64-bit</div>
+        <p class="dl-note">Разархивируй и запусти game.exe. Сохрани папку целиком.</p>
+      </div>
+      <a class="btn btn-download dl-btn" href="https://github.com/zkweijo229/terrifying-dream-site/releases/download/v1.0/terrifying-dream-game.zip" target="_blank" rel="noopener">⬇ Скачать игру</a>
     </div>
   </section>
 </main>
